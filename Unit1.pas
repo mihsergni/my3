@@ -71,6 +71,7 @@ pi:=Random(mas.Count-1);
 if mas.Count = 0 then
 begin
 gener;
+ShowMessage('');
 goto d;
 end;
 

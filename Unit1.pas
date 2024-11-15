@@ -1,5 +1,5 @@
 unit Unit1;
-Однажды в студёную зимнюю
+
 interface
 
 uses

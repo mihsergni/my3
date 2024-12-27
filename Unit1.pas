@@ -38,6 +38,7 @@ type
     procedure Button4Click(Sender: TObject);
     procedure Timer1Timer(Sender: TObject);
     procedure Timer2Timer(Sender: TObject);
+    procedure Probnaya(ii : integer);
   private
     { Private declarations }
   public
@@ -252,6 +253,7 @@ procedure TForm1.Button4Click(Sender: TObject);
 begin
 Timer1.Enabled:=true;
 Form1.WindowState:=wsMinimized;
+Form1.WindowState:=wsMinimized;
 
 //UnLockSystem(lmInput); // Разблокировка клавы и мыши
 end;
@@ -259,9 +261,11 @@ end;
 procedure TForm1.Timer1Timer(Sender: TObject);
 begin
 Timer1.Enabled:=false;
+Timer1.Enabled:=false;
+Timer2.Enabled:=true;
 Timer2.Enabled:=true;
 LockSystem(lmInput); // Блокировка всей системы
-
+//
 end;
 
 procedure TForm1.Timer2Timer(Sender: TObject);
@@ -281,6 +285,11 @@ mas.Add(IntToStr(i)+IntToStr(j));
 //ShowMessage(IntToStr(i)+IntToStr(j));
 end;
 
+end;
+
+procedure TForm1.Probnaya(ii: integer);
+begin
+ShowMessage('111');
 end;
 
 end.
